@@ -142,6 +142,95 @@ img{
     transition: 0.5s;
     transform: scale(1.5);
 }
+.about {
+    height: 31.25em;
+    background-color: var(--blue);
+
+    position: relative;
+}
+
+.about-angulation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.angulation {
+    height: 24.125em;
+    width: 100%;
+    background-color: var(--background);
+
+    transform: skewY(-4deg);
+}
+
+.container-about {
+    color: white;
+    position: absolute;
+    top: 0%;
+}
+
+.content-about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text-about {
+    width: 50%;
+    text-align: justify;
+}
+
+.text-about h2 {
+    margin-bottom: 1em;
+}
+
+.content-about img {
+    max-width: 31.875em;
+}
+
+.text-about p{
+    font-size: 1.25em;
+}
+
+;.games-aovivo::after{
+    content: '';
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 1.875em;
+    justify-content: space-between;
+}
+
+.partida{
+    width: 9.5rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.partida img{
+    width: 1.8em;
+}
+
+.time1, .time2 {
+    display: flex;
+    align-items: center;
+}
+
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
+
 
 /*Até 1199px */
 @media screen and (max-width: 74.93em){
