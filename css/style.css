@@ -1,6 +1,7 @@
 @import url(../E-Players/minhasfontes/TitilliumWeb-Regular.ttf);
 
 :root{
+    --bgnews: #1E1C21;
     --background: #000000;
     --red: #c20000;
     --blue:#001f70;
@@ -17,23 +18,19 @@
 }
 
 body{
-    background-image: var(--background);
+    background-color: var(--background);
     font-family: var(--font);
     font-size: 16px;
-
 }
 
 img{
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .header-top{
     width: 100%;
     height: 5em;
     background-color: black;
-}
-.header-top img{
-    max-width: 21.18em;
 }
 
 .content{
@@ -51,7 +48,6 @@ img{
 }
 
 .header-top img{
-    width: 20%;
     max-width: 21.18em;
 }
 
@@ -68,7 +64,6 @@ img{
     text-decoration: none;
     font-size: 1.5em;
     text-transform: uppercase;
-    background-color: red;
     padding: 0.9em 0.66em;
 }
 .menu a:hover{
@@ -87,7 +82,7 @@ img{
 }
 .banner-container{
     width: 100%;
-    height: 100%;
+    height: 37.5em;
     /*background-color: aquamarine;*/
     position: absolute;
     top: 0%;
@@ -148,28 +143,208 @@ img{
     transition: 0.5s;
     transform: scale(1.5);
 }
+.about {
+    height: 31.25em;
+    background-color: var(--blue);
 
-/*Até 1199px */
+    position: relative;
+}
+
+.about-angulation {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.angulation {
+    height: 24.125em;
+    width: 100%;
+    background-color: var(--background);
+
+    transform: skewY(-4deg);
+}
+
+.container-about {
+    color: white;
+    position: absolute;
+    top: 0%;
+}
+
+.content-about {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text-about {
+    width: 50%;
+    text-align: justify;
+}
+
+.text-about h2 {
+    margin-bottom: 1em;
+}
+
+.content-about img {
+    max-width: 31.875em;
+}
+
+.text-about p{
+    font-size: 1.25em;
+}
+
+;.games-aovivo::after{
+    content: '';
+}
+.games-aovivo, .games-embreve{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 1.875em;
+    justify-content: space-between;
+}
+
+.partida{
+    width: 9.5rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-left: 1em;
+}
+
+.partida img{
+    width: 1.8em;
+}
+
+.time1, .time2 {
+    display: flex;
+    align-items: center;
+}
+
+.time1 img{
+    margin-left: 0.5em;
+}
+.time2 img{
+    margin-right: 0.5em;
+}
+
+/*início de notícias*/
+.bgnews{
+    width: 100%;
+    height: auto;
+    background-color: var(--bgnews);
+}
+
+.news{
+    width: 70%;
+    height: 90%;
+    
+}
+.news h2, .next-games h2{
+    color: #fff;
+    margin: 1em 0em;
+    font-size: 2.1875em;
+}
+
+.next-games{
+    width: 25%;
+    height: 90%;
+    /*background-color: rgb(167, 167, 167);*/
+}
+
+.content-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardnews{
+    width: 15em;
+    height: 22em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(97, 97, 97), 0px 0px 30px rgb(0, 0, 0);
+}
+
+.cardnews h3{
+    padding: 0.5em 0.6em;
+}
+
+.cardnews p{
+    padding: 0em 0.6em;
+}
+
+.next-game-bg{
+    width: 90%;
+    height: auto;
+    background: var(--gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.4 em 0;
+}
+
+.next-game-match{
+    width: 100%;
+    height: 6.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+}
+
+.teams{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.next-game-match img{
+    max-width: 2.5em;
+}
+
+.next-game-match>p{
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*De 992 Até 1199px */
 @media screen and (max-width: 74.93em){
-    body{
-        background-color:var(--red);
+    .header-top > .flex-spbt-center {
+        flex-direction: column;
     }
-/*Até 991px*/
+}
+
+/*De 768 Até 991px*/
 @media screen and (max-width: 61.93em){
-    body{
-        background-color: var(--blue);
-    }
+
 }
-/*Até 767px*/
+/*De 567 Até 767px*/
 @media screen and (max-width: 47.93em){
-    body{
-       
+    #menubars{
+        display: block;
     }
 }
-/*Até 576px*/
+/*De 375 Até 576px*/
 @media screen and (max-width: 36em){
-    body{
-        
-    }
+
 }
 
